@@ -1,0 +1,313 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Chewy);
+html {
+  height: 100%;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+h1 { text-transform: uppercase; }
+h1, h2 { font-weight: normal; }
+
+body {
+  height: 100%;
+  margin: 0;
+}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+article {
+  display: block;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 10px 0;
+}
+
+article img {
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer:before {
+  display: block;
+  content: "#";
+  margin: 20px;
+}
+
+li {
+  list-style: none outside none;
+  margin-bottom: 5px;
+}
+
+#comments {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#comments:not(.showme) {
+  display: none;
+}
+
+a { color:#FF0000; text-decoration:none; }
+a:hover { text-decoration: underline; }
+
+.tldr {
+  color: #666;
+  font-style: italic;
+}
+
+.tldr:before {
+  content: "tldr; ";
+  font-size: 80%;
+  color: black;
+  font-style: normal;
+}
+
+.tldr > strong {
+  font-style: normal;
+  color: black;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+}
+
+.description {
+  margin-left: 250px;
+}
+
+#others {
+  margin-top: 120px;
+  margin-left: 80px;
+}
+
+.desc {
+  display: inline-block;
+  width: 125px;
+}
+
+.lnks {
+  display: inline;
+}
+
+.list {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: right;
+  width: 150px;
+}
+
+/* Sidebar */
+
+aside {
+  width: 300px; height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  padding: 50px;
+  background-image: url(http://i.imgur.com/5nwPL.png);
+  color: white;
+  box-shadow: 0 0 3px black;
+}
+
+aside > p { margin: 0; }
+aside > hr {
+  margin: 0; clear: both;
+  border: 0; height: 0;
+}
+
+#avatar {
+  border-radius: 50%;
+  display: block;
+  margin: 0 10px 40px 0;
+  box-shadow: 0 0 0 2px white;
+  -webkit-transition: 200ms;
+     -moz-transition: 200ms;
+      -ms-transition: 200ms;
+       -o-transition: 200ms;
+          transition: 200ms;
+}
+
+#avatar:hover {
+  box-shadow: 0 0 0 2px #F06;
+}
+
+#news li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+#news li time {
+  margin-right: 20px;
+  margin-left: -10px;
+  display: inline-block;
+  width: 120px;
+  text-align: right;
+  color: #aaa;
+}
+
+/* nav */
+
+nav {
+  margin-bottom: 0;
+  margin-left: 300px;
+  margin-right: 0;
+  margin-top: 0;
+  width: 384px;
+  height: 70px;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+nav li {
+  display: inline;
+  margin-top: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+#box {
+  color: white;
+  width: 320px;
+  margin-top: 300px;
+  margin-left: 50%;
+}
+
+#name {
+  font-family: 'Chewy', cursive;
+}
+
+#name h1 {
+  text-transform: none;
+}
+
+#home {
+  background-image: url(http://i.imgur.com/5nwPL.png);
+}
+
+#home nav {
+  background-image: url(/assets/navback.png);
+  background-repeat: no-repeat;
+}
+
+#news .news,
+#projects .projects,
+#stuff .stuff,
+#contact .contact
+{ color: #FF0000; }
+
+#icons {
+  text-align: center;
+}
+
+nav a:hover { color: #FF0000; }
+
+@media (max-width: 1220px) {
+  article {
+    margin: 40px 0 0 320px;
+  }
+  #comments {
+    margin: 0 0 0 300px;
+  }
+}
+
+@media (max-width: 950px) {
+  #news li time {
+    display: none;
+  }
+  .description {
+	margin-left: 220px;
+  }
+}
+
+@media (max-width: 860px) {
+  #wrap {
+	min-height: 100%;
+  }
+  #main {
+	overflow: auto;
+	padding-bottom: 92px;
+	}
+  aside {
+    position: relative;
+    width: 100%;
+	height: 92px;
+    padding: 8px;
+	bottom: 20px;
+    margin: -92px 0 0;
+	clear: both;
+    font-size: 110%;
+  }
+  article {
+    margin: 0 auto;
+  }
+  nav {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+  }
+  ul {
+ 	 margin-left: -40px;
+  }
+  #box {
+	margin-top: 200px;
+	margin-left: 30%;
+  }
+  #comments {
+    margin: 0 auto;
+  }
+  #avatar {
+    display: inline;
+    margin: 0 15px 0 0;
+    float: left;
+  }
+  links {
+	display: none;
+  }
+  .list {
+	width: 50%;
+  }
+}
+
+@media (max-width: 479px) {
+  article {
+	padding: 10px 10px 0;
+  }
+  .logo {
+	float: none;
+	margin: auto;
+  }
+  .description, .desc {
+	display: none;
+  }
+  #others {
+	margin: 100px auto 0;
+	text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+  nav {
+	width: 320px;
+  }
+  #home nav {
+	background-image: url(/assets/navbackshort.png);
+  }
+  #box {
+	width: 270px;
+	margin-top: 160px;
+	margin-left: 25px;
+  }
+}

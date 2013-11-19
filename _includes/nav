@@ -1,0 +1,9 @@
+		<nav>
+			<br />
+			<ul>
+				<li><b><a href="/news/" class="news">NEWS</a></b></li>
+				<li><b><a href="/stuff/" class="stuff">STUFF</a></b></li>
+				<li><b><a href="/projects/" class="projects">PROJECTS</a></b></li>
+				<li><b><a href="/contact/" class="contact">CONTACT</a></b></li>
+			</ul>
+		</nav>

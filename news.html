@@ -1,0 +1,29 @@
+---
+permalink: news/
+layout: nil
+title: Julien Lequertier
+---
+<!DOCTYPE html>
+
+{% include ie %}
+{% include meta %}
+<title>Julien Lequertier</title>
+
+<body id="news">
+	<div id="wrap">
+		<div id="main">
+{% include nav %}
+				<article class="home">
+					<ul>
+						{% for post in site.posts limit:100 %}
+						{% if post.standalone == null %}
+						<li><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endif %}
+						{% endfor %}
+    				</ul>
+				</article>
+		</div>
+	</div>
+{% include aside %}
+{% include ga %}
+</body>

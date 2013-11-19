@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<meta name="description" content="{{ page.title }} - Julien Lequertier's Homepage"/>
+<meta name="author" content="Julien Lequertier"/>
+
+<meta charset="utf8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://avrelaun.com/{{page.url}}">
+<meta name="twitter:title" content="{{page.title}}">
+<meta name="twitter:description" content="{{page.description}}">
+<meta name="twitter:image" content="http://avrelaun.com/assets/avatar.jpg">
+<meta name="twitter:site" content="@avrelaun">
+<meta name="twitter:creator" content="@avrelaun">
+
+<link rel="alternate" type="application/atom+xml" href="/index.xml"/>
+
+<link rel="stylesheet" href="/css/mop.css">
+
+<title>{{ page.title }} // by Julien Lequertier</title>
+
+<body id="news">
+	{% include aside %}
+	{% include nav %}
+	<article>
+    	{{ content }}
+
+    	<footer>
+      		<span>{{ page.date | date_to_string}}</span>
+        	<a onclick="window.open('http://twitter.com/share?text={{page.title}}&via=avrelaun&url=http%3A%2F%2Favrelaun.com%2F{{page.url | xml_escape}}','','width=400,height=300,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" href="http://twitter.com/share?text={{page.title}}&via=avrelaun&url=http%3A%2F%2Favrelaun.com%2F{{page.url | xml_escape}}" id="twitter" title="tweet this" target="_blank">
+			<span>tweet&nbsp;this</span>
+			</a>
+    	</footer>
+	</article>
+</body>

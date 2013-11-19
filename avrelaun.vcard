@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Lequertier;Julien;;;
+FN:Lequertier Julien
+ORG:
+TITLE:Entrepreneur
+URL:http://www.avrelaun.com/
+PHOTO;MEDIATYPE=image/jpeg:http://www.avrelaun.com/assets/avatar.jpg
+ADR;TYPE=work;LABEL="Nantes, 44000\nFrance"
+  :;;;Nantes;;44000;France
+REV:20130123T145801Z
+END:VCARD
